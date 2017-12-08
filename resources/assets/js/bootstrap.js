@@ -42,9 +42,23 @@ if (token) {
  * for events that are broadcast by Laravel. Echo and event broadcasting
  * allows your team to easily build robust real-time web applications.
  */
+/*import EchoLibrary from "laravel-echo";
+window.io = require('socket.io-client');
+let WS_HOST = 'http://homestead.app:PORT_OF_LARAVEL_ECHO_SERVER';
 
-// import Echo from 'laravel-echo'
+window.Echo = new EchoLibrary({
+    broadcaster: 'socket.io',
+    host: WS_HOST,
+    path: "/ws/socket.io",
+    secure: false
+});
 
+window.Echo.channel('test-channel')
+    .listen('GeoSave', (event) => {
+            console.log(event)
+        }
+    );*/
+// var socket = io('127.0.0.1:3000');
 // window.Pusher = require('pusher-js');
 
 // window.Echo = new Echo({
