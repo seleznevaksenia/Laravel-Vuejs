@@ -9,7 +9,9 @@
         "fideloper/proxy": "~3.3",
         "guzzlehttp/guzzle": "~6.0",
         "laravel/framework": "5.5.*",
-        "laravel/tinker": "~1.0"
+        "laravel/tinker": "~1.0",
+        "predis/predis": "^1.1",
+        "selezneva/geocoding": "^0.0.1"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
@@ -24,7 +26,7 @@
         ],
         "psr-4": {
             "App\\": "app/",
-            "Selezneva\\Geocoding\\": "packages/selezneva/geocoding/src"
+            "Ksenia\\Geocoding\\": "packages/ksenia/geocoding/src"
         }
     },
     "autoload-dev": {
